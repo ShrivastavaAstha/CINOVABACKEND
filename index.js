@@ -4,7 +4,7 @@ app.use(express.json());
 const cookies = require("cookie-parser");
 app.use(cookies());
 const { connectDatabase } = require("./connection/connect");
-const signupmodel = require("./models/SignUpData");
+const signupmodel = require("./models/SignUpdata");
 const notemodel = require("./models/Notedata");
 const verifyToken = require("./tokens/verifyToken");
 const generateToken = require("./tokens/generateToken");
